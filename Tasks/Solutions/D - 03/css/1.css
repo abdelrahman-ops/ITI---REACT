@@ -1,0 +1,155 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFBDAD;
+    background-image: url('../images/bg1.png');
+    background-repeat: repeat;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container {
+    border: 15px solid #4a4a4a;
+    background-color: white;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.section {
+    border: 3px solid #4a4a4a;
+    background-color: #FFBDAD;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+}
+
+.header-section {
+    background-color: #FFBDAD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+.logol {
+    width: 96px;
+    height: 96px;
+
+    border: 2px solid #4a4a4a;
+}
+
+.header-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: #4a4a4a;
+    white-space: nowrap;
+}
+
+.umd-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #4a4a4a;
+    margin-top: 1rem;
+}
+
+.nav-section {
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.nav-section a {
+    color: #b91c1c;
+    text-decoration: underline;
+    padding: 0 0.5rem;
+    white-space: nowrap;
+}
+
+.content-section {
+    padding-left: 90px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #5A484E;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+}
+
+p {
+    font-style: italic;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+    
+}
+p.content{
+    max-width: 500px;
+}
+span{
+    font-weight:bolder;
+    font-style: normal;
+    font-size: large;
+}
+
+.calculator-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.calculator-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.calculator-item a {
+    color: #b91c1c;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.footer-section {
+    background-color: #FFBDAD;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    color: #4a4a4a;
+    font-style: normal;
+}
+p.footer{
+    font-style: normal;
+}
+
+.nav-buttons{
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-buttons a{
+    color: #ffb6a9;
+    font-weight: bolder;
+    font-size: large;
+    font-style: italic;
+    margin: 20px;
+    border: 1px solid #0073aa;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    background: #0c6a96;
+}

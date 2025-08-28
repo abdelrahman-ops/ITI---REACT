@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+.pricing-table {
+    width: 800px;
+    margin: 30px auto;
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px;
+    background-color: #3a3a3a;
+    border: 1px solid #000;
+}
+
+.header-row th {
+    background-color: #0099CC;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.first-col {
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+.plan-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plan-price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.plan-period {
+    font-size: 12px;
+}
+
+.feature {
+    text-align: left;
+    font-weight: bold;
+}
+
+.check {
+    color: #0099CC;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cross {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.signup-row td {
+    background-color: #3a3a3a;
+}
+
+.signup-price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.signup-btn {
+    display: inline-block;
+    background-color: #0099CC;
+    color: #fff;
+    padding: 8px 16px;
+    margin-top: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #0077aa;
+}
+
+.nav-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+.nav-buttons{
+    font-size: 20px;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+
+}
+
+.nav-buttons a{
+    color: #ffb6a9;
+    font-weight: bolder;
+    font-size: large;
+    font-style: italic;
+    margin: 0 10px;
+    border: 1px solid #0073aa;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    background: #0c6a96;
+}
