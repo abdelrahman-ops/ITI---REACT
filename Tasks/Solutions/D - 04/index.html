@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>JavaScript Lab 1 — Solution</title>
+
+		<!-- 3.c) Embedded script BEFORE external script: try to read firstName -->
+		<script>
+			console.log("3.c) Before external script is loaded:");
+			console.log("firstName (before load) =", firstName);
+		</script>
+
+		<!-- Load the external variables -->
+		<script src="./external.js"></script>
+	</head>
+	<body style="font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; max-width: 960px; margin: 2rem auto; padding: 0 1rem;">
+		<h1>JavaScript Lab 1 — Solution</h1>
+
+		<h2>Part 2 — Embedded script using variables</h2>
+		<script>
+			console.log("2.a) number1 + number2 =", number1 + number2);
+			console.log("2.b) number1 + number3 =", number1 + number3);
+
+			var flag = true;
+			console.log("2.c) flag + number2 =", flag + number2);    
+			console.log("2.d) firstName + flag =", firstName + flag);       
+			console.log("2.e) number1 + firstName =", number1 + firstName); 
+			console.log("2.f) number1 * flag =", number1 * flag);           
+
+			console.log("2.g) number1 / lastName =", number1 / lastName);
+
+			console.log("2.h) Full Name:", firstName + " " + lastName);
+
+			var chars = [];
+			for (var i = 0; i < lastName.length; i++) {
+				chars.push(lastName[i]);
+			}
+			console.log("2.i) lastName to array of characters:", chars);
+		</script>
+
+		<h2>Part 3 — Experiments and comments</h2>
+		<script>
+			// 3.b) var hoisting demo (no try/catch, just shows undefined)
+			(function(){
+				console.log("3.b) var hoisting demo:");
+				console.log("Access firstNameVar before var declaration ->", firstNameVar);
+				var firstNameVar = "HoistedVarName";
+				console.log("After declaration/initialization, firstNameVar =", firstNameVar);
+			})();
+
+				// 3.c) Another embedded script BEFORE external script tried to call firstName — already done at top.
+				// With 'var firstName' in the same script scope (if declared later), reading it before assignment yields 'undefined' instead of ReferenceError.
+				// With 'let/const firstName' in the same block, you get a ReferenceError (Temporal Dead Zone) until the declaration runs.
+
+				// 3.d) Try to change firstName character at index 3
+				console.log("3.d) Before change attempt, firstName =", firstName, " | firstName[3] =", firstName[3]);
+				firstName[3] = 'A';
+				console.log("3.d) After attempt firstName =", firstName);
+		</script>
+
+			<h2>Part 4 — Functions</h2>
+			<p>Functions are implemented in <code>functionsScript.js</code> and called from <code>FunctionUsingScript.js</code>.</p>
+			<button onclick="demoCalculator()">Try Calculator Demo</button>
+			<button onclick="demoGrades()">Try Grade Demo</button>
+			<button onclick="demoFactorial()">Try Factorial Demo</button>
+			<button onclick="demoCharCodes()">Try Char Codes Demo</button>
+
+			<!-- Functions Implementation -->
+			<script src="./functionsScript.js"></script>
+
+			<!-- Calls / Demos -->
+			<script src="./FunctionUsingScript.js"></script>
+
+	</body>
+</html>
