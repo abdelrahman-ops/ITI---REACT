@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Popup</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        }
+        #message {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border: 1px solid #ccc;
+        padding: 10px;
+        min-height: 40px;
+        width: 400px;
+        }
+        .cursor {
+        display: inline-block;
+        width: 10px;
+        background: black;
+        animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+        0% { background: black; }
+        50% { background: transparent; }
+        100% { background: black; }
+        }
+    </style>
+    </head>
+    <body>
+    <h2>Typing a message</h2>
+    <div id="message"></div><span class="cursor"></span>
+
+    <script>
+        const text = "This is the message being typed out inside a popup window...";
+        let index = 0;
+
+        function typeWriter() {
+        if (index < text.length) {
+            document.getElementById("message").textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100); // speed of typing
+        } else {
+            document.querySelector(".cursor").style.display = "none"; // hide cursor after finish
+        }
+        }
+
+        window.onload = typeWriter;
+    </script>
+    </body>
+</html>

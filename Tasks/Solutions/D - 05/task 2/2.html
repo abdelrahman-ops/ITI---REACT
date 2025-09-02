@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <script src="./2.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 2rem;
+            background-color: #fff;
+            border: 1px solid #c0c0c0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+        }
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            text-transform: lowercase;
+            color: black; /* Always black */
+        }
+        .info-section {
+            padding: 1rem;
+        }
+        .info-section p {
+            margin-bottom: 0.5rem;
+        }
+        .black-text {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container rounded-lg">
+        <h1 class="font-bold">entering user info</h1>
+        
+        <div class="info-section">
+            <p><span class="colored-text" id="welcome-text">Welcome dear guest</span> <span class="black-text">Ali</span></p>
+            <p><span class="colored-text">your telephone number is</span> <span class="black-text">7777777</span></p>
+            <p><span class="colored-text">your mobile number is</span> <span class="black-text">011111111</span></p>
+            <p><span class="colored-text">your email address is</span> <span class="black-text">aaa@bbb.cm</span></p>
+        </div>
+        
+        <hr class="my-4 border-gray-300">
+        
+        <div class="info-section">
+            <p><span class="colored-text">today is</span> <span class="black-text">Tue Sep 29 2020</span></p>
+        </div>
+    </div>
+</body>
+</html>

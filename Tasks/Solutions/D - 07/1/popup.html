@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrolling Ad</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        }
+        .content {
+        height: 1000px;
+        padding: 20px;
+        background: linear-gradient(white, lightblue);
+        }
+    </style>
+</head>
+    <body>
+        <div class="content">
+            <h2>Advertisement</h2>
+            <p>This is some sample advertising content that will scroll automatically.</p>
+            <p>Scroll down to see more...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <p>Sed posuere consectetur est at lobortis.</p>
+            <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Etiam porta sem malesuada magna mollis euismod.</p>
+            <p>More content here to keep scrolling...</p>
+            <p>End of content.</p>
+        </div>
+
+        <script>
+            let scrollY = 0;
+            function autoScroll() {
+            scrollY += 1;
+            window.scrollTo(0, scrollY);
+            if (scrollY < document.body.scrollHeight - window.innerHeight) {
+                setTimeout(autoScroll, 30); // speed control (lower = faster)
+            }
+            }
+            window.onload = autoScroll;
+        </script>
+    </body>
+</html>
